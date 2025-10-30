@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dreamcube.art</title>
+  <style>
+    /* --------- ESTILO GERAL --------- */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #0a0f2c 0%, #2a1b4d 100%);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    /* Animação de entrada */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* --------- LOGO / CUBO --------- */
+    .logo-cube {
+      margin-top: 60px;
+      width: 150px;
+      height: auto;
+      filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
+      transition: transform 0.8s ease;
+    }
+
+    .logo-cube:hover {
+      transform: rotateY(15deg) rotateX(10deg) scale(1.03);
+    }
+
+    /* --------- TEXTOS --------- */
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-top: 25px;
+      color: #eaeaea;
+    }
+
+    p {
+      font-size: 1rem;
+      max-width: 400px;
+      margin: 10px auto 40px;
+      color: #bfbfbf;
+      line-height: 1.6;
+    }
+
+    /* --------- BOTÕES --------- */
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 0.95rem;
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: scale(1.05);
+    }
+
+    /* --------- RODAPÉ --------- */
+    footer {
+      margin-top: auto;
+      padding: 30px 0;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    /* --------- RESPONSIVIDADE --------- */
+    @media (max-width: 600px) {
+      .logo-cube {
+        width: 120px;
+        margin-top: 40px;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+        margin: 20px 10px 10px;
+      }
+
+      p {
+        font-size: 0.9rem;
+        margin: 0 20px 30px;
+      }
+
+      .btn {
+        font-size: 0.9rem;
+        padding: 9px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Cubo / Logo -->
+  <img src="coloque_o_link_da_sua_imagem_aqui.jpeg" alt="Dreamcube Logo" class="logo-cube">
+
+  <!-- Título e frase -->
+  <h1>E se o seu universo favorito coubesse em um cubo?</h1>
+  <p>Animes, filmes e jogos recriados em mundos miniaturizados.</p>
+
+  <!-- Botões -->
+  <div class="buttons">
+    <a href="#" class="btn">Ver Cubos</a>
+    <a href="#" class="btn">Contato</a>
+    <a href="#" class="btn">Sobre</a>
+    <a href="#" class="btn">Comprar</a>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>© 2025 Dreamcube.art — Todos os direitos reservados.</footer>
+</body>
+</html>
