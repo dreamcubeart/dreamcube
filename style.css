@@ -1,0 +1,52 @@
+/* Fundo com degradê minimalista */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0a021e, #1c0a46, #2d1b64);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #b094ff, #7aa0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #cfcfcf;
+    max-width: 600px;
+}
+
+.buttons {
+    margin-top: 2rem;
+}
+
+.buttons a {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.buttons a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
